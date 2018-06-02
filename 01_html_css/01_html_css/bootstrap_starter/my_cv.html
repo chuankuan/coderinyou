@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Walkthrough</title>
 
     <!-- default bootstrap -->
@@ -18,18 +19,240 @@
     
     <!-- animate.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
-    
+    <link rel="stylesheet" href="custom.css">
+
     <!-- use this style for testing and development purposes -->
-    <!-- <style type="text/css">
+    <style type="text/css">
     .container{border: 2px dotted green;}
     .row{border: 1px dotted red;}
     .row [class*=' col-']{border: 2px dotted purple;}
-    </style> -->
+    </style>
     
 </head>
 <body>
 
-    
+    <div class="container">
+        <!-- Row 1-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1>Eat, code, sleep, repeat</h1>
+                    <p> Tony</p>
+
+                    <p>
+                        <a class="btn btn-success" href="http://google.com">
+                            Google
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row 2-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="http://via.placeholder.com/400x400" alt="">
+                        <div class="caption">
+                            <h3>Portfolio 1</h3>
+                            <p>Text text tex</p>
+                            <p>
+                            <a class="btn btn-primary" href="http://google.com">
+                                View more
+                            </a>
+                            </p>
+
+                    </div>
+
+                </div>
+
+             </div>
+        
+            <div class="col-md-4">
+                    <div class="thumbnail"> <!-- From Boot Strap -->
+                        <img src="http://via.placeholder.com/400x400" alt="">
+                        <div class="caption">
+                            <h3>Portfolio 2</h3>
+                            <p>Text text tex</p>
+                            <p>
+                                <a class="btn btn-primary" href="http://google.com">
+                                View more
+                                </a>
+                            </p>
+
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="thumbnail">
+                            <img src="http://via.placeholder.com/400x400" alt="">
+                            <div class="caption">
+                                <h3>Portfolio 3</h3>
+                                <p>Text text tex</p>
+                                <p>
+                                    <a class="btn btn-primary" href="http://google.com">
+                                        View more
+                                    </a>
+                                </p>
+        
+                            </div>
+                        </div>
+            </div>
+            
+        </div>
+
+        <!-- Row 3-->
+        <div class="row">
+                <div class="col-md-12">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/MAjY8mCTXWk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                    </div>
+
+                </div>
+
+        </div>
+
+        <!-- Row 4-->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>
+                    Talk to me
+                </h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="Name"> Name:</label>
+                        <input type"text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="my_email">Put Email here:</label>
+                        <inpput type"email" class="form-control"></inpput>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="my_radio" id="my_raido_1"> Test1
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="my_radio" id="my_raido_2"> Test2
+                            </label>
+                        </div>
+ 
+                    </div>
+                    
+            </div>
+
+                    
+
+                </form>
+            </div>
+            <div class="col-md-6 text-centre">
+                <h3>About Me...</h3>
+                <hr>
+                <P>AA BB CC</P>
+
+            </div>
+
+        </div>
+
+        <!-- Row 5-->
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Working hours: </h3>
+                <table class="table">
+                    <tr>
+                        <td>
+                            Day
+                        </td>
+                        <td>
+                            Hrs
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Monday
+                        </td>
+                        <td>
+                            9-6pm
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Sunday
+                        </td>
+                        <td>
+                            8pm
+                        </td>
+
+
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.202333111274!2d103.79261593176165!3d1.2941603744010122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a4fdcdcb793%3A0x560828fd88f7aa6!2sJTC+Launchpad!5e0!3m2!1sen!2ssg!4v1527915696040" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    </iframe>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Find me:</h3>
+                <div class="List-group">
+                    <a href="Tel: 1234" class="List-group-item">
+                        <i class="fa fa-phone" aria-hidden="true"> +65 1234567</i> 
+                    </a>
+                    
+                </div>
+                <div class="List-group">
+                    <a href="" class="List-group-item">
+                        <i class="fa fa-envelope"> aria-hidden="true" abc@jk.com</i>
+
+                    </a>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row 6-->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline"> <!-- From bootstrap -->
+                    <li>
+                        <a href="http://">
+                            <i class="fa fa-facebook" aria-hidden="true"></i> <!-- From font-awesome -->
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="http://">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+
+                        </a>
+                    </li>
+
+                </ul>>
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
