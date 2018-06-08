@@ -1,0 +1,39 @@
+.my-form{
+	font-family: "Lato";
+    max-width: 500px;
+    padding: 10px;
+	margin: auto;
+	border: 1.5px solid black;
+}
+
+/*1. add margin spacing for top & bottom: 20px */
+.my-form-group{
+	margin: 20px 0;
+			
+}
+
+
+
+input[type=text],input[type=email]{
+
+    border: 1.5px solid green;
+    font-size: 1.5rem;
+	/* border-bottom: 1.5px solid black; */
+	
+}
+
+/*input[type]:focus is a state of being used */
+input[type=text]:focus,input[type=email]:focus{
+
+	outline: none;
+	border-color: orangered;
+    border: 1.5px solid orangered;	
+    border-image: 2px;
+    font-size: 1.5rem;
+}
+
+.my-strong{ 
+    font-size: 1.5em;
+    color: blue;
+	
+}

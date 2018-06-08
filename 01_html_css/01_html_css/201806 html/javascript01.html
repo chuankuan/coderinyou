@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang "en">
+
+<head>
+    <title>My first Javascript lesson</title>
+    <script language="Javascript" type="text/Javascript">
+    // all our javascript code here
+    
+
+    var number=1;
+    var name="Darrly";
+    var linebreak="<br />";
+    var names= ["angela","chetan","janie","tong hwee","chtistopher"]
+
+    function writeHTML(){
+        document.write("<h1>Hello World</h1>");
+        document.writeln(number);
+        document.writeln("<br>");
+        document.writeln(name);
+        
+    }
+    
+    function sayName(){
+        var name="Eddie"; //Local variable
+        alert(this.name);
+    }
+
+    function basicCalculation(){
+        var num1 = 5;
+        var num2 = 2;
+        document.write("5*2="+(num1*num2)+linebreak);
+
+
+        document.write("5/2="+(num1/num2)+linebreak);
+
+
+        document.write("5+2="+(num1+num2)+linebreak);
+
+
+        document.write("5-2="+(num1-num2)+linebreak);
+
+
+        document.write("5%2="+(num1%num2)+linebreak);
+
+    }
+
+    function processNumber(){
+        var number= document.getElementById("num").value;
+        var RHS = 50;
+       //  alert(number);
+       if ((number > 90) && (number<=100)){
+           alert("Wow. Distinction!");
+
+       }
+       else if ((number > 80) && (number < 90)){
+           alert("A");
+       }
+       else if(number > RHS) {
+        alert("Pass");
+       }
+       else {
+           alert("Border line pass");
+       }
+    }
+
+    function processNames(){
+        document.writeln("Number of items in Names: "+names.length+linebreak);
+        var count=0;
+        while(count < names.length) { //start of while loop
+            // document.writeln(names[count] + linebreak)
+            console.log(names[count]);
+            count++; // count=count+1
+        } //end of while loop
+    }
+
+    processNames():void
+    
+       
+    </script>
+
+</head>
+
+
+<body>
+    <input type="button" value="Print Text" onclick="writeHTML()"/>
+    <input type="button" value="Say Name" onclick="sayName()" />
+    <input type="button" value="Basic Calculation" onclick="basicCalculation()" />
+    <input type="button" value="Loop through Names" onclick="processNames()" />
+
+    <hr>
+    Enter a number: <input type="number id" id=num />
+    <input type="button" value="Post number" onclick="processNumber()" />
+
+   <input type="button" value="Name display" onclick="processNames()" />
+
+
+
+
+</body>
+
+
+</html>

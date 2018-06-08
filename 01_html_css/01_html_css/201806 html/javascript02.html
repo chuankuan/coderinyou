@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>My Javascript 02</title>
+
+    <script language="javascript" type="text/javascript">
+            var myObject;
+
+            myObject=[
+                {
+                    "id":1,
+                    "name":"Steven",
+                    "dob": "01-Jan-1977",
+                    "cars": ["Civic","Evolution","Subaru"]
+
+                }, 
+                {
+                    "id":2,
+                    "name":"Eddie",
+                    "dob": "01-Dec-1977",
+                    "cars": ["QQ","Chevolet","Mini"]
+
+                }, 
+                {
+                    "id":3,
+                    "name":"Grace",
+                    "dob": "01-Jul-1977",
+                    "cars": ["BMW","Mecedes","Lexus"]
+
+                }];
+                
+
+                var linebreak = "<br>";
+
+                function printData(count) {
+                    var name = myObject[count].name;
+                    var dob = myObject[count].dob;
+                    var car = "";
+                    var carlen = myObject[count].cars.length; 
+
+                    for(var i=0; i< carlen ; i++){
+                        car += myObject[count].cars[i] + linebreak; //cars = cars + myObject[count].cars[i];
+
+                    }
+
+                    document.getElementById("demo").innerHTML +=name + linebreak + dob + linebreak + car + linebreak;
+                }
+                
+                function whileloopData(){
+                    var counter = 0;
+
+                    while (counter < myObject.length){ //Start of while loop
+                        printData(counter);
+
+                        counter++; //counter = counter + 1
+
+                    } //End of while loop
+                }
+        
+        </script>
+
+</head>
+
+<body>
+    <input type="button" value="Print Data"  onclick="whileloopData()"/>
+    <p id="demo">
+
+
+    </p>
+
+
+
+
+</body>
+
+
+</html>
